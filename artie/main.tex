@@ -104,13 +104,15 @@ superscriptaddress,
 \collaboration{ARTIE Collaboration}%\noaffiliation
 
 \date{\today}
-             
+
+\nocite{*}
+
 \begin{abstract}
 The cross section for neutron interactions on argon is an important
 design and operational parameter for a number of neutrino, dark
 matter, and neutrinoless double beta decay experiments which feature
 liquid argon as a detection or shielding medium.  There is a lingering
-discrepancy between the total cross-section in the $30$ to $70~\rm
+discrepancy between the total cross section in the $30$ to $70~\rm
 keV$ neutron kinetic energy region given in the Evaluated Nuclear Data
 File (ENDF) and the single measurement conducted in the 1990's by an
 experiment optimized for higher energy. This discrepancy is
@@ -120,7 +122,7 @@ rise to significant uncertainty in the interaction length of neutrons
 in liquid argon. This paper presents results from the Argon Resonant
 Transport Interaction Experiment (ARTIE) at the Los Alamos Neutron
 Science Center (LANSCE), the first dedicated experiment optimized for
-this energy region. The ARTIE measurement of the total cross-section
+this energy region. The ARTIE measurement of the total cross section
 as a function of energy confirms the existence of a negative resonance
 in this region.
 \end{abstract}
@@ -145,11 +147,11 @@ the scientific objectives sought by these experiments relies on
 understanding the transport of neutrons through liquid argon at a
 level of precision which has only recently emerged as a critical
 experimental requirement.  A recent measurement of the neutron capture
-cross-section~\cite{Fischer2019b, Fischer2019a} settled a roughly
+cross section~\cite{Fischer2019b, Fischer2019a} settled a roughly
 $50\%$ discrepancy between previous measurements in favor of the ENDF
-cross-sections\cite{ENDF} for neutron kinetic energy below $1~\eV$.
+cross sections\cite{ENDF} for neutron kinetic energy below $1~\eV$.
 
-The neutron-argon total cross-section as predicted by ENDF features an
+The neutron-argon total cross section as predicted by ENDF features an
 anti-resonance feature at $57~\keV$ which increases the neutron
 interaction length in liquid argon, for a natural abundance of
 isotopes, to $42~\rm m$.  At this energy scale, neutrons only lose a
@@ -174,7 +176,7 @@ ARTIE features an experimental determination of the transmission
 coefficient $T$, defined as the fraction of neutrons which pass
 through a custom liquid argon target without scattering.  For a
 target of length $d$ with atomic number density $n_{\rm trg}$, the
-cross-section is given by:
+cross section is given by:
 \begin{equation}
   \sigma = -\frac{1}{n_{\rm trg} \, d} \, \ln \, T.
 \label{eq:sigma}
@@ -186,7 +188,7 @@ casts the cross section discrepancy as competing predictions for
 transmission coefficient for the ARTIE target of either
 {\color{red} $X$ or $Y$}.
 The ARTIE target is well suited to the anti-resonance region, but
-quickly becomes opaque to neutrons at higher cross-section.  Our
+quickly becomes opaque to neutrons at higher cross section.  Our
 energy region of interest is defined as $30$ to $70~\rm keV$.
 
 \section{\label{sec:setup}Experimental Methods}
@@ -333,7 +335,7 @@ to the same exposure as $N$ we calculate the background as:
 where $T_{\rm Al}$ is the known transmission coefficient of the
 aluminum filter, smeared by energy resolution.  This technique \cite{Brown:2017accapp} uses the
 narrow resonances near our region of interest in the neutron-aluminum
-cross-section to provide a peek at the background.  The amount by
+cross section to provide a peek at the background.  The amount by
 which count $N_{\rm Al}(E)$ in a narrow resonance exceeds the
 projected count from the known aluminum transmission $T \cdot N$
 indicates the amount of background.
@@ -449,7 +451,7 @@ taken immediately before each warm-up, with maximal ice build-up, used
 as ``target in'', and runs taken immediately after the warm-up, with
 minimal ice build-up, used as ``target out''.  A Monte Carlo
 simulation was used to determine the transmission coefficient of ice
-using the incident neutron spectrum and the ENDF total cross-section.
+using the incident neutron spectrum and the ENDF total cross section.
 The best-fit ice thickness was found to be $d =
 0.030^{+0.095}_{-0.025}~\rm cm$, which is consistent with our
 observation that $5~\rm mm$ ice powder consisted of ice crystals mixed
@@ -461,7 +463,7 @@ with a significant amount of air.
     \centering
     \begin{tabular}{|c|c|c|c|}
 \hline
-& affected & parameter & cross-section  \\
+& affected & parameter & cross section  \\
     name & parameters & uncertainty & uncertainty \\ \hline        
 beam instability & $Q_{\rm in}, Q_{\rm out}$ & $\pm 1.0\%$ & $\pm$1.0\%\\   
 thermal misalignment & $Q_{\rm in}$ & -5\% & -3.1\% \\
@@ -493,7 +495,7 @@ The number density of boiling liquid argon in the target was
 experimentally determined with an associated systematic uncertainty of
 $1.3\%$.  {\color{red} [I took this from 0.17/1.318.. differs from value in the table of 1.5\%  How was this uncertainty determined?]}
 
-The measured cross-section was not corrected for ice buildup on the
+The measured cross section was not corrected for ice buildup on the
 kapton windows.  Instead, the simulated transmission coefficient for
 ice with a thickness equal to the $1~\rm sigma$ upper bound on
 experimentally determined maximum ice thickness ($1.3 \rm cm$) is
@@ -507,7 +509,7 @@ $0.95 \ mg/cm^3$ and a minimum of $0.75~{\rm mg/cm^3}$, using data
 collected from the TA-53 (LANSCE) and TA-54 (White Rock) weather
 stations.  The maximum variation in the neutron flux reaching the
 detector was calculated from the maximum variation in the air density
-and the known cross-section for the three main constituents of air.
+and the known cross section for the three main constituents of air.
 The variation $0.4\%$ was applied as a systematic due to atmospheric
 pressure.
 
@@ -521,7 +523,7 @@ The absolute energy calibration is limited by the statistical
 uncertainties on the fitted parameter $\sigma(t_{\rm fit})=29~\rm ns$,
 and the contribution from $\sigma(L_{\rm fit})=0.064~\rm m$ is
 neglible.  No systematic uncertainty for energy resolution is applied
-to the cross-section results, which are reported as function of
+to the cross section results, which are reported as function of
 measured energy.
 
 
@@ -529,7 +531,7 @@ measured energy.
 
 From the experimentally determined neutron counts in each TOF bin, the
 transmission coefficient $T$ is calculated from Eq.~\ref{eq:T} and the
-cross-section from Eq.~\ref{eq:sigma}.  The central value of each TOF
+cross section from Eq.~\ref{eq:sigma}.  The central value of each TOF
 bin is coverted to energy using Eq~\ref{eq:v(t)}, which determines the
 kinetic energy dependence of these experimentally determined
 quantities.
@@ -541,7 +543,7 @@ quantities.
 \end{figure}
 
 As a cross check of the experimental methods and analysis procedure,
-the cross-section of carbon was determined from data collected with
+the cross section of carbon was determined from data collected with
 two $0.125\pm 0.010$” thick carbon (99.999\% purity)
 disks~\cite{CarbonLesker} attached to the ARTIE target while it was
 flushed with gaseous argon.  Fig.~\ref{fig:carbon} shows the
@@ -558,9 +560,9 @@ in the ROI) was found.
     \label{fig:results}
 \end{figure}
 
-The measured neutron-argon total cross-section as a function of
+The measured neutron-argon total cross section as a function of
 kinetic energy is shown in Fig.~\ref{fig:results}.  Our results are
-consistent with the prediction from the ENDF cross-section smeared by
+consistent with the prediction from the ENDF cross section smeared by
 the ARTIE energy resolution for the range from $40$ to $70~\rm keV$.
 In the region from $30$ to $40~\rm keV$ our results reproduce the
 EXFOR results which differ from the ENDF prediction.
@@ -568,10 +570,10 @@ EXFOR results which differ from the ENDF prediction.
     resonance (34 barns) that limits statistics, as the vacuum beam
     pipe flanges are made of aluminum.]}
 The EXFOR experiment was optimized for a scan of a
-much wider energy region and higher cross-section, and our results
-only differ for cross-sections less than $0.2~\rm b$.  We suspect that
+much wider energy region and higher cross section, and our results
+only differ for cross sections less than $0.2~\rm b$.  We suspect that
 our results are consistent if statistical uncertainty of the EXFOR
-results in the regions of low cross-section are accounted for.  Our
+results in the regions of low cross section are accounted for.  Our
 results confirm the predicted anti-resonance feature at $57~\keV$,
 which has profound implications on the ability of neutrons to traverse
 large distances in liquid argon detectors and shielding.
@@ -602,13 +604,13 @@ to us by LANSCE and its personnel.
 \subsection{Measurement Strategy}
 \label{sec:strategy}
 
-The ARTIE experiment determines the neutron total cross-section in argon using the one-dimensional geometry illustrated.
+The ARTIE experiment determines the neutron total cross section in argon using the one-dimensional geometry illustrated.
 
 The kinetic energy (E) of each detected neutron can be determined from the Time-Of-Flight (TOF) $t$ by the relativistic formula:
 \begin{equation} \label{eq:tof}
 E = m c^2 \left[\frac{1}{\sqrt{1-L^2/c^2t^2}}-1 \right]
 \end{equation}
-where $m$ is the mass of the neutron, $L$ is the flight distance, and $t$ is the flight time.  In practice, the actual distance traversed by the neutron is greater than $L$ because the path of each neutron through the neutron moderator needs to be considered.  The average extra distance in the moderator is known as the {\it Moderator Response Function} (MRF) and is determined by simulation and validated by data from known neutron cross-section resonances, as discussed in Sec.~\ref{sec:ecal}.
+where $m$ is the mass of the neutron, $L$ is the flight distance, and $t$ is the flight time.  In practice, the actual distance traversed by the neutron is greater than $L$ because the path of each neutron through the neutron moderator needs to be considered.  The average extra distance in the moderator is known as the {\it Moderator Response Function} (MRF) and is determined by simulation and validated by data from known neutron cross section resonances, as discussed in Sec.~\ref{sec:ecal}.
 %%Sofia, need to introduce also L (and T0?). The moment and position of the neutron production is given by the beam instrumentation. $L$ is set to be the distance between the (...) and detector. In practice, the actual distance (...). A simulation of the effect of the moderator is used to provide an average correction and the energy resolution, at each energy measured with eq. 1.
 
 The ARTIE target was designed such that the target volume may contain liquid argon (LAr), gaseous argon (GAr), or air. For any given target fill, the number of neutrons of energy $E$ which reach the TOF detector during a particular run is given by:
@@ -622,7 +624,7 @@ If the target is filled with argon of density $n$ atoms/$cm^3$, the probability 
 T(E) = e^{-n d\sigma}
 \label{eq:P(E)}
 \end{equation}
-where $\sigma$ is the total neutron-argon cross-section we seek to measure.  
+where $\sigma$ is the total neutron-argon cross section we seek to measure.  
 %Because neutrons do not experience ionizing energy loss while traversing the target, the energy is constant, and the probability that a neutron traverses the entire target length ($d$) without scattering is determined by integration:
 The quantity $n d$ is called the target thickness and has units of atoms per barn.  The total number of neutrons that reach the 6-Li detector without interacting is given by:
 \begin{equation}
@@ -632,9 +634,9 @@ N(E) = f(E) Q e^{-n d \sigma}
 %%Sofia: neutrons that reach the TOF? Maybe: neutrons of energy E that reach the detector n(E) is experimentally determined from TOF.
 To avoid the need to determine the absolute value of the factor $f(E)$ the following procedure is used:
 
-The total neutron-argon cross-section $\sigma(E)$ is determined from data collected with the target in two different configurations.  For ``target-in'' runs the volume contains LAr, a total number of neutrons $Q_{\rm liq}$ is produced, and the number of neutrons of energy $E$ that reach the detector $N_{\rm liq}(E)$ is experimentally determined.  For ``target-out'' runs, the target volume would ideally be at vacuum, but in practice GAr is used. The total number of neutrons produced is given by $Q_{\rm gas}$, and the number of neutrons detected is given as $N_{\rm gas}(E)$.
+The total neutron-argon cross section $\sigma(E)$ is determined from data collected with the target in two different configurations.  For ``target-in'' runs the volume contains LAr, a total number of neutrons $Q_{\rm liq}$ is produced, and the number of neutrons of energy $E$ that reach the detector $N_{\rm liq}(E)$ is experimentally determined.  For ``target-out'' runs, the target volume would ideally be at vacuum, but in practice GAr is used. The total number of neutrons produced is given by $Q_{\rm gas}$, and the number of neutrons detected is given as $N_{\rm gas}(E)$.
 
-The factor $f(E)$ is assumed constant to within the systematic uncertainties as discussed below. Thus, the total cross-section can be calculated as:
+The factor $f(E)$ is assumed constant to within the systematic uncertainties as discussed below. Thus, the total cross section can be calculated as:
 \begin{equation}
 \sigma(E) = -\frac{1}{(n_{\rm liq}-n_{\rm gas}) d} \, \ln \left( \frac{N_{\rm liq}(E)/Q_{\rm liq}}{N_{\rm gas}(E)/Q_{\rm gas}} \right) \\
 \label{eq:sigma}
